@@ -32,44 +32,47 @@ body {
 }
 
 .packets-make, .packets-need {
-    padding-left: 0.5em;
-    width: 350px;
-    height: 200px;
+    padding-left: 1em;
+    width: 480px;
+    height: 285px;
     box-shadow: 0px 4px 4px #888888;
+}
+.packets-need{
+    height: 255px;
 }
 
 .apple-packet label {
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 16px;
     display: block;
 }
 
 .apple-packet input {
-    width: 120px;
+    width: 200px;
     height: 20px;
     background: #FFFFFF;
     border-radius: 1px;
-    margin-left: 3em;
+    margin-left: 9em;
     margin-bottom: 0.5em;
 }
 
 input[name="packet"] {
-    margin-left: 3.8em;
+    margin-left: 9.4em;
 }
 
 input[name="packets"] {
-    margin-left: 6.9em;
+    margin-left: 11.5em;
 }
 .apple-packet button {
     margin-top: 0.5rem;
-    margin-left: 14.8em;
+    margin-left: 16.8em;
     width: 127px;
     height: 30px;
     font-weight: bold;
 }
 .packets-need button {
     width: 160px;
-    margin-left:12.3em;
+    margin-left:16.9em;
 }
 .no-packets,.no-apples {
     margin-top: 0.5em;
@@ -77,7 +80,7 @@ input[name="packets"] {
 }
 
 .number-packets, .number-apple {
-    margin-left: 3em;
+    margin-left: 5em;
     width: 156px;
     height: 31px;
     background: #BDB9B9;
