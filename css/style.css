@@ -1,0 +1,80 @@
+body {
+    font-family: 'Inter';
+    color: black;
+    font-weight: bold;
+
+}
+
+.container {
+    background-color: #D9D9D9;
+    padding: 4em;
+}
+
+.apple-packet {
+    width: 395px;
+    height: 646px;
+}
+
+.apple-packet>h2 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.packets-make label {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.packets-make, .packets-need {
+    padding-left: 0.5em;
+    width: 350px;
+    height: 200px;
+    box-shadow: 0px 4px 4px #888888;
+}
+
+.apple-packet label {
+    font-weight: 700;
+    font-size: 24px;
+    display: block;
+}
+
+.apple-packet input {
+    width: 120px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    margin-left: 3em;
+    margin-bottom: 0.5em;
+}
+
+input[name="packet"] {
+    margin-left: 3.8em;
+}
+
+input[name="packets"] {
+    margin-left: 6.9em;
+}
+.apple-packet button {
+    margin-top: 0.5rem;
+    margin-left: 14.8em;
+    width: 127px;
+    height: 30px;
+    font-weight: bold;
+}
+.packets-need button {
+    width: 160px;
+    margin-left:12.3em;
+}
+.no-packets,.no-apples {
+    margin-top: 0.5em;
+    font-size: 20px;
+}
+
+.number-packets, .number-apple {
+    margin-left: 3em;
+    width: 156px;
+    height: 31px;
+    background: #BDB9B9;
+    border-radius: 1px;
+    
+}

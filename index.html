@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="apple-packet">
+            <h2>Apple packet planner</h2>
+            <div class="packets-make">
+                <h3>How many packets can you make? </h3>
+                <label for="apple-count"> Apple count
+                    <input type="text" name="count" class="apple-count">
+                </label>
+                <label for="packet_size"> Packet size
+                    <input type="text" name="packet" class="packet-size">
+                </label>
+                <button class="calculate-packets"> Calculate packets</button>
+                <div class="no-packets">
+                    # of Packets <span class="number-packets">kj</span>
+                </div>
+            </div>
+
+            <div class="packets-need">
+                <h3>How many apples do you need? </h3>
+                <label for="apple-count-need"> Packets
+                    <input type="text" name="packets" class="apple-count-need">
+                </label>
+                <label for="packet_size"> Packet size
+                    <input type="text" name="packet" class="packet-size-need">
+                </label>
+                <button class="calculate-apples"> Calculate apples needed </button>
+                <div class="no-apples">
+                    # of Apples <span class="number-apple"> 0 </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
