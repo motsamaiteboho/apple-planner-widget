@@ -8,9 +8,15 @@ body {
 .container {
     background-color: #D9D9D9;
     padding: 4em;
+    display: flex;
+}
+
+.container div {
+    flex: 1;
 }
 
 .apple-packet {
+    padding-left: 10%;
     width: 395px;
     height: 646px;
 }
@@ -77,4 +83,88 @@ input[name="packets"] {
     background: #BDB9B9;
     border-radius: 1px;
     
+}
+.price-planner {
+    padding: 1em;
+}
+
+.price-planner >h2 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.price-planner label {
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+}
+
+.price-planner input {
+    width: 120px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    margin-left: 5em;
+    margin-bottom: 0.5em;
+}
+input[name="cost"] {
+    margin-left: 6.9em;
+}
+input[name="appels"] {
+    margin-left: 7.5em;
+}
+input[name="size"] {
+    margin-left: 4.4em;
+}
+input[name="prof"] {
+    margin-left: 13.2em;
+}
+
+.price-planner button {
+    margin-top: 0.5rem;
+    margin-left: 14.8em;
+    width: 127px;
+    height: 30px;
+    font-weight: bold;
+}
+.buying, .calculations {
+    padding: 1em;
+    box-shadow: 0px 4px 4px #888888;
+    width: 480px;
+    height: 240px;
+}
+.buying button {
+    width: 130px;
+    margin-left:22.9em;
+}
+
+.calculations div{
+    padding: 0.5em;
+}
+
+.calculations span {
+    background-color: #BDB9B9;
+}
+.calcu-packets {
+    margin-left: 9em;
+}
+.cost-price-apple {
+    margin-left: 8.5em;
+}
+
+.cost-price-packet {
+    margin-left: 8em;
+}
+.recommended {
+    margin-left: 5.5em;
+}
+
+@media (max-width: 900px){
+
+    .container {
+        flex-direction: column;
+    }
+    .apple-packet {
+        padding-left: 1em;
+    }
 }

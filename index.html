@@ -14,24 +14,24 @@
             <div class="packets-make">
                 <h3>How many packets can you make? </h3>
                 <label for="apple-count"> Apple count
-                    <input type="text" name="count" class="apple-count">
+                    <input type="text" value ="" name="count" class="apple-count">
                 </label>
                 <label for="packet_size"> Packet size
-                    <input type="text" name="packet" class="packet-size">
+                    <input type="text" value ="" name="packet" class="packet-size">
                 </label>
                 <button class="calculate-packets"> Calculate packets</button>
                 <div class="no-packets">
-                    # of Packets <span class="number-packets">kj</span>
+                    # of Packets <span class="number-packets">0</span>
                 </div>
             </div>
 
             <div class="packets-need">
                 <h3>How many apples do you need? </h3>
                 <label for="apple-count-need"> Packets
-                    <input type="text" name="packets" class="apple-count-need">
+                    <input type="text" value =""name="packets" class="apple-count-need">
                 </label>
                 <label for="packet_size"> Packet size
-                    <input type="text" name="packet" class="packet-size-need">
+                    <input type="text"  value ="" name="packet" class="packet-size-need">
                 </label>
                 <button class="calculate-apples"> Calculate apples needed </button>
                 <div class="no-apples">
@@ -39,8 +39,40 @@
                 </div>
             </div>
         </div>
-
+        <div class="price-planner">
+            <h2>Apple packet price planner</h2>
+            <div class="buying">
+                <h3>Apple buying data</h3>
+                <label for="cost-price">Cost price for a box of apples
+                    <input type="text" value ="" name="cost" class="cost-price">
+                </label>
+                <label for="no-apples-box">Number of apples in the box
+                    <input type="text" value ="" name="appels" class="no-apples-box">
+                </label>
+                <label for="sold">The packet size apples are sold in
+                    <input type="text" value ="" name="size" class="sold">
+                </label>
+                <label for="profit">Required profit %
+                    <input type="text" value ="" name="prof" class="profit">
+                </label>
+                <button class="calculate"> Calculate</button>
+            </div>
+            <div class="calculations">
+                <h3>Apple price calculations</h3>
+                <div>
+                    Number of packets <span class="calcu-packets">0</span>
+                </div>
+                <div>
+                    Cost price per apple <span class="cost-price-apple">R</span>
+                </div>
+                <div>
+                    Cost price per packet <span class="cost-price-packet">R</span>
+                </div>
+                <div>
+                    Recommened packet price <span class="recommended">R</span>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </body>
 </html>
