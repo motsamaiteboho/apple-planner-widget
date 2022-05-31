@@ -45,8 +45,15 @@ function ApplePlanner(){
     function applesNumber(){
         return packetSize * packetCount;
     }
+    function costPricePerApple(){
+        return costPrice / appleCount;
+    }
+
+    function costPricePacket(){
+        return costPrice / packetSize;
+    }
     function packetPrice(){
-        return 0
+        return  costPricePacket() - (costPricePacket()* (profit/100));
     }
     return{
         setAppleCount,
@@ -62,6 +69,7 @@ function ApplePlanner(){
         setProfit,
         getProfit,
         packetPrice,
-        
+        costPricePerApple,
+        costPricePacket,
     }
 }

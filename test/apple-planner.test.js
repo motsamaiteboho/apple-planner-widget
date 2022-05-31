@@ -53,13 +53,31 @@ describe('The apple planner app', function () {
 		assert.equal(20, applePlanner.getProfit());
 	})
 
-	it('should be to calculate the number of apples needed ', function () {
+	it('should be to calculate the recommended price per packet to a specified profit ', function () {
 		const applePlanner = ApplePlanner();
-		applePlanner.setCostPrice(10);
+		applePlanner.setCostPrice(100);
 		applePlanner.setAppleCount(20);
 		applePlanner.setPacketSize(4);
 		applePlanner.setProfit(10);
-		assert.equal(40, applePlanner.packectPrize());
+		assert.equal(22.50, applePlanner.packetPrice().toFixed(2));
+
+	});
+	it('should be to calculate the  cost price per apple', function () {
+		const applePlanner = ApplePlanner();
+		applePlanner.setCostPrice(100);
+		applePlanner.setAppleCount(20);
+		applePlanner.setPacketSize(4);
+		applePlanner.setProfit(10);
+		assert.equal(5.00, applePlanner.costPricePerApple().toFixed(2));
+
+	});
+	it('should be to calculate the  cost price per packet', function () {
+		const applePlanner = ApplePlanner();
+		applePlanner.setCostPrice(100);
+		applePlanner.setAppleCount(20);
+		applePlanner.setPacketSize(4);
+		applePlanner.setProfit(10);
+		assert.equal(25.00, applePlanner.costPricePacket().toFixed(2));
 
 	});
 });
