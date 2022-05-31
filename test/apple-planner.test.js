@@ -59,7 +59,7 @@ describe('The apple planner app', function () {
 		applePlanner.setAppleCount(20);
 		applePlanner.setPacketSize(4);
 		applePlanner.setProfit(10);
-		assert.equal(22.50, applePlanner.packetPrice().toFixed(2));
+		assert.equal(27.50, applePlanner.packetPrice().toFixed(2));
 
 	});
 	it('should be to calculate the  cost price per apple', function () {
