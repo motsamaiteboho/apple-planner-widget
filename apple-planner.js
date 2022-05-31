@@ -53,7 +53,7 @@ function ApplePlanner(){
         return costPrice / packetSize;
     }
     function packetPrice(){
-        return  costPricePacket() - (costPricePacket()* (profit/100));
+        return  costPricePacket() + (costPricePacket()* (profit/100));
     }
     return{
         setAppleCount,
